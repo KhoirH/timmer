@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<style type="text/css">
+	.tabs .indicator{
+		background-color: #2196f3 ;
+		height: 3px;
+	}
+	.chip{
+		cursor: pointer;
+	}
+	.browser{
+		border:1px solid #888 !important;
+		text-indent: 10px; 
+		border-radius: 2px; 
+	}
+</style>
+</head>
+<body>
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="cstudiovin-shutterstock-infocus.jpg"> <!-- random image -->
+        
+      </li>
+      
+      <li>
+        <img src="powerful-education.jpg"> <!-- random image -->
+        
+      </li>
+      <li>
+        <img src="on-campus-teaching-degree-in-math-education.jpg"> <!-- random image -->
+        
+      </li>
+    </ul>
+</div>
+
+<div class="valign-wrapper" style="position: fixed; top: 0; right: 0; left: 0; bottom: 0; z-index: 100; ">
+	<div class="container" style="background: rgba(100,100,100,0.4); padding: 20px; border-radius: 2px;">
+		<h4 class="white-text">Main Page</h4>
+		  <ul id="tabs-swipe-demo" class="tabs">
+		    <li class="tab col s3"><a class="blue-text active" href="#button-auto">Input Automatic</a></li>
+		    <li class="tab col s3"><a class="blue-text" href="#input-int">Input Manualy</a></li>
+		  </ul>
+		  <br>
+		 <div class="row">
+		 	<div class="col s12">
+		 		<div class="col s12 white" style="padding: 20px;">
+					<div id="button-auto">
+					 	<h5 >Button Action</h5>	
+				 	  	<div style="height: 0px; border-bottom:2px solid #2196f3; width: 40px"></div>
+				 	  <br>
+				 	  <div class="row">
+					 	  <div class="col l8 s12">
+						 	  <a href="#modal1" class="modal-trigger"><div class="chip">10</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">15</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">20</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">25</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">30</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">35</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">40</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">45</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">50</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">55</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">60</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">65</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">70</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">75</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">80</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">85</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">90</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">95</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">100</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">105</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">110</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">115</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">120</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">125</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">130</div></a>
+							  <a href="#modal1" class="modal-trigger"><div class="chip">135</div></a>
+							  
+						  </div>
+						  <div class="col l4 s12 " >
+						  	<ul style="margin: 0px;" >
+						  		<li>* Klik to start</li>
+						  		<li>* Time seconds</li>
+						  	</ul>
+						  </div>
+					  </div>
+					</div>
+					<div id="input-int">
+						<h5 >Input Manualy</h5>	
+				 	  	<div style="height: 0px; border-bottom:2px solid #2196f3; width: 40px"></div>
+				 	  	<br>
+				 	  	<div class="row">
+				 	  		<div class="col s10">
+								<div class="row valign-wrapper">
+							        <div class="input-field col s12">
+							          <input id="password" type="text" class="validate browser" name="time-set" placeholder="Detik">
+							        </div>
+							         <div class="input-field col s6">
+									    <select name="metode" id="metode-set">
+									      <option value="detik">Detik</option>
+									      <option value="menit">Menit</option>
+									    </select>
+									    <label>Select Metode</label>
+									  </div>
+							    </div>
+						    </div>
+						    <div class="col s2">
+						    	<a href="#modal1" class="btn modal-trigger set" style="margin-top: 25px;">
+						    		Submit
+						    	</a>
+						    </div>
+					    </div>
+					</div>
+				 </div>
+			 </div>
+		 </div>
+	</div>
+</div>
+
+<div id="modal1" class="modal" style="overflow: hidden;">
+	<div class="modal-content ">
+	  <h4>Timer</h4>
+	  <div class="row">
+		  	<input type="hidden" name="jenis_time">
+		  <div class="input-field col s12">
+	          <input  id="first_name" type="text" class="validate" readonly="readonly" style="font-size: 3em; text-align: center;" value="0" name="time">
+	      </div>
+      </div>
+	</div>
+	<div class="modal-footer">
+		<div class="row"> 
+			<div class="col s12">
+				  <a href="#!" class="modal-action modal-close waves-effect waves-light btn red">Back</a>
+				  <a href="#!" class=" waves-effect waves-light btn green start">Start</a>
+			</div>
+		</div>
+	</div>
+</div>
+ <script type="text/javascript">
+ 	$(document).ready(function(){
+ 		var bool = true
+ 		$('select').material_select()
+ 		$('.modal').modal({
+ 			dismissible: false
+ 		});
+ 		$('.slider').slider({
+ 			indicators :false,
+ 			height:window.innerHeight
+ 		});
+
+ 		$(".chip").click(function(){
+ 			var interger = $(this).html()
+ 			$("#modal1").find("input[name = 'jenis_time']").val("detik") 
+ 			$("#modal1").find("input[name = 'time']").val(interger) 
+ 		})
+
+ 		$(".start").click(function(){
+ 			var jenis = $("#modal1").find("input[name = 'jenis_time']").val();
+ 			var interger = $("#modal1").find("input[name = 'time']").val() 
+ 			var int_1 = interger.split(":")[0]
+			var int_2 = interger.split(":")[1]
+			var int_3 = interger.split(":")[2]
+ 			var a = 2
+ 			var cek = {}
+ 			var button = $(this).text()
+ 			var $button = button == "Start" ? "Pause" : "Start";
+ 			$(this).html($button) 			
+			
+ 			loop = function(){
+ 				if ($button == "Pause") {	 			
+		 			switch(jenis) {
+					    case "detik":
+					        interger -= 1
+					        a = interger
+					        break;
+				        case "menit":
+				        	if (int_2 < 1) {
+				    			int_1 -= 1;
+				    			int_2 = 59;
+				    		}
+				        	int_2 -= 1
+				    		if (int_1 < 1 && int_2 < 1) {
+				    			a = 0
+				    		}	    	
+				        	interger = int_1+":"+int_2
+				        break;
+					}
+								
+ 					$("#modal1").find("input[name = 'time']").val(interger) 	
+					if( a < 1 ){
+						window.clearInterval(cek.cek)
+					}	
+ 				}
+			}
+			if (Boolean(cek.cek)) {
+				window.clearInterval(cek.cek)
+			}
+			cek.cek = window.setInterval(function(){
+ 				loop()
+			},1000)
+				
+ 			
+ 		})
+ 		$("#metode-set").change(function(){
+ 			var c = $(this).val()
+ 			var format = c == "detik" ? "Detik" :"Menit:Detik";
+ 			$("input[name = 'time-set']").attr("placeholder" , format)
+
+ 		})
+ 		$(".set").click(function(){
+ 			var jenis = $("#metode-set").val()
+ 			var interger = $("input[name = 'time-set']").val()
+ 			$("#modal1").find("input[name = 'jenis_time']").val(jenis)
+ 			$("#modal1").find("input[name = 'time']").val(interger) 
+
+ 		})
+ 	})
+ </script>
+</body>
+</html>
